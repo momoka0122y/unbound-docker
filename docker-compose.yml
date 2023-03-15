@@ -1,0 +1,9 @@
+version: '3.8'
+  
+services:
+  unbound:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: unbound
+    network_mode: host
